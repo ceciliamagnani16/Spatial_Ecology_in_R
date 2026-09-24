@@ -2,7 +2,7 @@
 2+3
 
 #first object
-cecilia <- 2+3
+cecilia <- 2+3 # per R <- (assign) è uguale a = 
 
 #second object
 julius <- 4+6
