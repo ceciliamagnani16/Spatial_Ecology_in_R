@@ -20,7 +20,7 @@ tma <- 5 * 4
 
 tma + samuele + gemma # 20 + 5 + 10
 
-matteo <– 5, 10, 20, 50, 80 #an array (vettore) is a set of elements: this is an array of mammal spicies
+matteo <- 5, 10, 20, 50, 80 #an array (vettore) is a set of elements: this is an array of mammal spicies
 #we need to use a function to apply a concept to a certain amount of data, R doesn't read this as an array of data
 
 #we are using the function c()
