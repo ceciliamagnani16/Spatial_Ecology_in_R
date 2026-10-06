@@ -12,5 +12,5 @@ Take an image from the net and drag and drop it inside Markdown
 
 ## Creation of a folder
 
-< img src="Pics/"> 
+<img src="Pics/Pics/dji_fly_20241226_054143_0_1735188103432_photo_low_quality.JPG"> 
 
