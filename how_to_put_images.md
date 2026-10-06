@@ -12,3 +12,5 @@ Take an image from the net and drag and drop it inside Markdown
 
 ## Creation of a folder
 
+< img src="Pics/"> 
+
