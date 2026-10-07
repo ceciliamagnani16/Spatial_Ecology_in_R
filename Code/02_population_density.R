@@ -33,10 +33,31 @@ elevation <- bei.extra$elev # we assign this operation to an object, now if we w
 bei.extra [[1]] # in case bei.extra was a table one parentheses was sufficient, in this case it's a map in two dimension so we need a double parentheses 
 elevation2 <- bei.extra[[1]]
 
+# creating our first map
+density(bei)
+densitymap <- density(bei)
+plot(densitymap)
 
+# now we want to plot the points on top of the density map with a new function
+points(bei, cex=.5)
 
+# NEW CONCEPT !! Multi-frame ! A single figure in which we can put multiple graphs
+par(mfrow=1,2)  # in this case we want to plot the density map and the elevation, so we need 1 row and 2 columns 
+# we need to concatenate the array
+par(mfrow=c(1, 2))
+# now we created the multiframe, now we need to plot inside the multiframe the density map and the elevation
 
+par(mfrow=c(1,2))
+plot(elevation)
+plot(densitymap)
 
+# esercizio: Put the elvation map on top of the density map
+par(mfrow=c(2,1))
+plot(elevation)
+plot(densitymap)
+
+# our friend from now on if we get any graphical issue
+dev.off()
 
 
     
