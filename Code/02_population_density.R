@@ -1,7 +1,7 @@
 # R code for population density
 
 # Installing packages
-install.packages("spatstat")
+# install.packages("spatstat")
 
 # using the package(s) 
 # we don't need to use commas anymore because we already installed the package
@@ -59,5 +59,20 @@ plot(densitymap)
 # our friend from now on if we get any graphical issue
 dev.off()
 
+# changing colors in our maps
+cl <- colorRampPalette(c("blue", "green", "red"))
+ plot(densitymap, col=cl)
+
+# nuances
+cl <- colorRampPalette(c("blue", "green", "red"))(3)
+plot(densitymap, col=cl)
+
+# Excersise
+cl10 <- colorRampPalette(c("blue", "green", "red"))(10)
+cl100 <- colorRampPalette(c("blue", "green", "red"))(100)
+
+par(mfrow=c(2, 1))
+plot(densitymap, col=cl10)
+plot(densitymap, col=cl100)
 
     
