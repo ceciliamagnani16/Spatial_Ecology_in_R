@@ -28,9 +28,36 @@ tiger <- kerinci[kerinci$Sps=="tiger",] # because there are different columns we
 # density plot of spreading of the tiger in the area in different time
 densityPlot(tiger$Timecirc)
 
-# Alternative method: create the time variable from the tiger dataset and use it 
+# alternative method: create the time variable from the tiger dataset and use it 
 tigertime <- tiger$Timecirc
 densityPlot(tigertime)
+
+# alternative method 2 (selecting a column doesn't necessarily need require a name:
+tigertime <- tiger[4]
+
+# Exercise: select all the rows of the kerinci dataset with the species macaque
+macaque <- kerinci[kerinci$Sps=="macaque",]
+
+#Exercise: make the density plot for the macaque 
+macaquetime <- macaque$Timecirc
+densityPlot(macaque$Timecirc)
+
+
+
+# overlap the two distributions 
+overlapPlot(tigertime, macaquetime)
+
+
+#changing the graph
+overlapPlot(tigertime, 
+            macaquetime, 
+            linetype=c(3,1), 
+            linecol=c("cyan3", "magenta"),
+            olapcol="deeppink")
+
+
+
+
 
 
 
